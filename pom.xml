@@ -6,6 +6,7 @@
     <modules>
         <module>config-server</module>
         <module>config-client</module>
+        <module>webhook-server</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
