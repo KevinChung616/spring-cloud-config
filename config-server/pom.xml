@@ -4,6 +4,7 @@
         <artifactId>config-refresh</artifactId>
         <groupId>com.jtsp</groupId>
         <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -11,13 +12,15 @@
     <packaging>jar</packaging>
 
     <name>config-server</name>
-    <url>http://maven.apache.org</url>
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-config-server</artifactId>
+        </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
