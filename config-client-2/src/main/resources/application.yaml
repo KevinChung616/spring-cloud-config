@@ -1,0 +1,11 @@
+spring:
+  config:
+    import: configserver:${spring.cloud.config.uri}
+  application:
+    name: config-client-2
+  profiles:
+    active: dev
+  cloud:
+    config:
+      uri: http://localhost:8088
+      label: feature-1 # branch name
