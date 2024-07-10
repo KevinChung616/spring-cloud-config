@@ -39,6 +39,16 @@ run rabbit mq
 docker run -d --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management
 ```
 
+setup ngrok to expose your config server to public
+```shell
+ngrok http http://localhost:8088
+```
+
+Setup github webhook to public host with api path
+```shell
+{your ngrok url}/monitor
+```
+
 Start Config Server, then visit `localhost:8080/client/default`. You should be able to get following response.
 ```json
 {
